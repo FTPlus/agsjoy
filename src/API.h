@@ -43,7 +43,7 @@
 #		endif
 #	endif
 #else
-#	if !defined(WINMM_VERSION) && !defined(DX8_VERSION)
+#	if !defined(WINMM_VERSION) && !defined(DX8_VERSION) && !defined(SDL_VERSION)
 #		define WIN_AUTO_VERSION
 #	endif
 #endif

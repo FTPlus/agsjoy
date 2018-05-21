@@ -6,7 +6,9 @@
 
 #include "API.h"
 
-#if defined(WINMM_VERSION)
+#if defined(SDL_VERSION)
+#	include "Joystick_sdl.cpp"
+#elif defined(WINMM_VERSION)
 #	include "Joystick_mm.cpp"
 #elif defined(DX8_VERSION)
 #	include "Joystick_dx8.cpp"
